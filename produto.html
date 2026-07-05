@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Brinco | LUAR acessórios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="products.css"><link rel="stylesheet" href="responsive.css"><link rel="stylesheet" href="pedido.css?v=2">
+</head>
+<body>
+  <div class="announcement">CATÁLOGO DE SEMIJOIAS LUAR <span>•</span> Atendimento pelo WhatsApp</div>
+  <header class="header product-header">
+    <a class="logo" href="index.html" aria-label="LUAR acessórios">LU<span>A</span>R<small>ACESSÓRIOS</small></a>
+    <div class="product-actions">
+      <a class="back-link" href="index.html#produtos">← Voltar para brincos</a>
+      <button class="order-toggle" type="button" aria-label="Abrir pedido">◇<b class="cart-count">0</b></button>
+    </div>
+  </header>
+  <main class="product-page" id="productPage"></main>
+  <div class="order-backdrop"></div>
+  <aside class="cart" id="orderCart" aria-hidden="true">
+    <div class="cart-head">
+      <div><p class="eyebrow dark">SEU PEDIDO</p><h2>Resumo <span class="order-title-count">(0)</span></h2></div>
+      <button class="cart-close order-close" type="button" aria-label="Fechar pedido">×</button>
+    </div>
+    <div class="cart-items order-items"></div>
+    <div class="cart-foot order-foot" hidden>
+      <div class="order-summary"><span>Total do pedido</span><b class="order-total">R$ 0,00</b></div>
+      <p>O pedido será enviado para o atendimento da LUAR.</p>
+      <a class="order-whatsapp" href="https://wa.me/5511959744633" target="_blank" rel="noopener">Enviar pedido pelo WhatsApp</a>
+    </div>
+  </aside>
+  <footer class="product-footer"><p>© 2026 LUAR acessórios · Catálogo de semijoias femininas.</p></footer>
+  <script src="catalogo.js?v=6"></script>
+  <script src="produto.js?v=6"></script>
+  <script src="pedido.js?v=3"></script>
+</body>
+</html>
