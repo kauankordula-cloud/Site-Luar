@@ -34,15 +34,6 @@ window.BRINCOS = [
 
 window.BRINCOS = window.BRINCOS.concat([
   {
-    id: "conjunto-01",
-    nome: "Conjunto Bambu",
-    descricao: "Argolas e colar dourados com formas inspiradas no bambu.",
-    categoria: "conjuntos",
-    preco: 25,
-    imagem: "assets/conjuntos/conjunto-01.png",
-    uso: "assets/conjuntos/uso-01.jpeg"
-  },
-  {
     id: "conjunto-02",
     nome: "Conjunto Pérola Orgânica",
     descricao: "Colar e brincos com pérolas orgânicas e contorno dourado.",
@@ -50,15 +41,6 @@ window.BRINCOS = window.BRINCOS.concat([
     preco: 25,
     imagem: "assets/conjuntos/conjunto-02.png",
     uso: "assets/conjuntos/uso-02.png"
-  },
-  {
-    id: "conjunto-03",
-    nome: "Conjunto Gota de Luz",
-    descricao: "Colar, brincos e pulseira com gotas de cristal delicadas.",
-    categoria: "conjuntos",
-    preco: 25,
-    imagem: "assets/conjuntos/conjunto-03.png",
-    uso: "assets/conjuntos/uso-03.jpeg"
   },
   {
     id: "conjunto-04",
@@ -179,6 +161,51 @@ window.BRINCOS = window.BRINCOS.concat([
     preco: 25,
     imagem: "assets/conjuntos/conjunto-16.png",
     uso: "assets/conjuntos/uso-16.jpeg"
+  },
+  {
+    id: "conjunto-17",
+    nome: "Conjunto Leque Cristal",
+    descricao: "Colar e brincos em formato de leque dourado com ponto de cristal.",
+    categoria: "conjuntos",
+    preco: 25,
+    imagem: "assets/conjuntos/conjunto-17.png",
+    uso: "assets/conjuntos/uso-17.png"
+  },
+  {
+    id: "conjunto-18",
+    nome: "Conjunto Sol Radiante",
+    descricao: "Colar e brincos circulares com textura solar e brilho dourado.",
+    categoria: "conjuntos",
+    preco: 25,
+    imagem: "assets/conjuntos/conjunto-18.png",
+    uso: "assets/conjuntos/uso-18.png"
+  },
+  {
+    id: "conjunto-19",
+    nome: "Conjunto Gota Esmeralda",
+    descricao: "Colar e brincos com pedra verde em formato de gota e acabamento dourado.",
+    categoria: "conjuntos",
+    preco: 25,
+    imagem: "assets/conjuntos/conjunto-19.png",
+    uso: "assets/conjuntos/uso-19.png"
+  },
+  {
+    id: "conjunto-20",
+    nome: "Conjunto Safira Lumina",
+    descricao: "Colar e brincos com pedra azul central e contorno de cristais.",
+    categoria: "conjuntos",
+    preco: 25,
+    imagem: "assets/conjuntos/conjunto-20.png",
+    uso: "assets/conjuntos/uso-20.png"
+  },
+  {
+    id: "conjunto-21",
+    nome: "Conjunto Gota de Cristais",
+    descricao: "Colar e brincos em gota vazada com cristais delicados.",
+    categoria: "conjuntos",
+    preco: 25,
+    imagem: "assets/conjuntos/conjunto-21.png",
+    uso: "assets/conjuntos/uso-21.png"
   }
 ]);
 
@@ -228,7 +255,7 @@ window.BRINCOS = window.BRINCOS.concat([
 window.BRINCOS = window.BRINCOS.concat([
   {
     id: "pulseira-01",
-    nome: "Pulseira Feminina 01",
+    nome: "Pulseira Medalhinhas Douradas",
     descricao: "Pulseira feminina dourada, delicada e versátil.",
     categoria: "pulseiras",
     preco: 19.90,
@@ -237,7 +264,7 @@ window.BRINCOS = window.BRINCOS.concat([
   },
   {
     id: "pulseira-02",
-    nome: "Pulseira Feminina 02",
+    nome: "Pulseira Cristal Ônix",
     descricao: "Pulseira feminina dourada com acabamento elegante.",
     categoria: "pulseiras",
     preco: 19.90,
@@ -246,7 +273,7 @@ window.BRINCOS = window.BRINCOS.concat([
   },
   {
     id: "pulseira-03",
-    nome: "Pulseira Feminina 03",
+    nome: "Pulseira Elos de Coração",
     descricao: "Pulseira feminina dourada para compor looks delicados.",
     categoria: "pulseiras",
     preco: 19.90,
@@ -255,7 +282,7 @@ window.BRINCOS = window.BRINCOS.concat([
   },
   {
     id: "pulseira-04",
-    nome: "Pulseira Feminina 04",
+    nome: "Pulseira Aro Luz Dourada",
     descricao: "Pulseira feminina dourada com design contemporâneo.",
     categoria: "pulseiras",
     preco: 19.90,
@@ -264,7 +291,7 @@ window.BRINCOS = window.BRINCOS.concat([
   },
   {
     id: "pulseira-05",
-    nome: "Pulseira Feminina 05",
+    nome: "Pulseira Aro Minimalista",
     descricao: "Pulseira feminina dourada com detalhes sofisticados.",
     categoria: "pulseiras",
     preco: 19.90,
@@ -273,7 +300,7 @@ window.BRINCOS = window.BRINCOS.concat([
   },
   {
     id: "pulseira-06",
-    nome: "Pulseira Feminina 06",
+    nome: "Pulseira Malha Laço Dourado",
     descricao: "Pulseira feminina dourada com brilho delicado.",
     categoria: "pulseiras",
     preco: 19.90,
@@ -282,7 +309,7 @@ window.BRINCOS = window.BRINCOS.concat([
   },
   {
     id: "pulseira-07",
-    nome: "Pulseira Feminina 07",
+    nome: "Pulseira Trevo Charm",
     descricao: "Pulseira feminina dourada de estilo moderno.",
     categoria: "pulseiras",
     preco: 19.90,
@@ -291,7 +318,7 @@ window.BRINCOS = window.BRINCOS.concat([
   },
   {
     id: "pulseira-08",
-    nome: "Pulseira Feminina 08",
+    nome: "Pulseira Elos Bambu",
     descricao: "Pulseira feminina dourada para todas as ocasiões.",
     categoria: "pulseiras",
     preco: 19.90,
@@ -300,7 +327,7 @@ window.BRINCOS = window.BRINCOS.concat([
   },
   {
     id: "pulseira-09",
-    nome: "Pulseira Feminina 09",
+    nome: "Pulseira Trevos Delicados",
     descricao: "Pulseira feminina dourada com acabamento refinado.",
     categoria: "pulseiras",
     preco: 19.90,
@@ -309,7 +336,7 @@ window.BRINCOS = window.BRINCOS.concat([
   },
   {
     id: "pulseira-10",
-    nome: "Pulseira Feminina 10",
+    nome: "Pulseira Fita Dourada",
     descricao: "Pulseira feminina dourada com presença elegante.",
     categoria: "pulseiras",
     preco: 19.90,
@@ -318,11 +345,50 @@ window.BRINCOS = window.BRINCOS.concat([
   },
   {
     id: "pulseira-11",
-    nome: "Pulseira Feminina 11",
+    nome: "Pulseira Pérolas Lumina",
     descricao: "Pulseira feminina dourada de design exclusivo.",
     categoria: "pulseiras",
     preco: 19.90,
     imagem: "assets/pulseiras/pulseira-11.png",
     uso: "assets/pulseiras/uso-11.png"
+  }
+]);
+
+window.BRINCOS = window.BRINCOS.concat([
+  {
+    id: "colar-01",
+    nome: "Colar Flor de Cristal",
+    descricao: "Colar dourado com pingente floral cravejado e ponto de luz central.",
+    categoria: "colares",
+    preco: 19.90,
+    imagem: "assets/colares/colar-01.png",
+    uso: "assets/colares/uso-01.jpeg"
+  },
+  {
+    id: "colar-02",
+    nome: "Colar Choker Ponto de Luz",
+    descricao: "Choker dourada com corrente lisa e pingente de cristal delicado.",
+    categoria: "colares",
+    preco: 19.90,
+    imagem: "assets/colares/colar-02.png",
+    uso: "assets/colares/uso-02.png"
+  },
+  {
+    id: "colar-03",
+    nome: "Colar Folha Ônix",
+    descricao: "Colar dourado com pingente de folha em detalhes escuros e cristais.",
+    categoria: "colares",
+    preco: 19.90,
+    imagem: "assets/colares/colar-03.png",
+    uso: "assets/colares/uso-03.jpeg"
+  },
+  {
+    id: "colar-04",
+    nome: "Colar Riviera Cristal",
+    descricao: "Colar dourado estilo riviera com fileira delicada de pontos de luz.",
+    categoria: "colares",
+    preco: 19.90,
+    imagem: "assets/colares/colar-04.png",
+    uso: "assets/colares/uso-04.png"
   }
 ]);

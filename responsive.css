@@ -2,6 +2,36 @@
 body { overflow-x: hidden; }
 img { max-width: 100%; }
 .cta, .whatsapp-button, .newsletter button { min-height: 44px; }
+.image-logo {
+  display: inline-flex;
+  align-items: center;
+  width: 142px;
+  height: 64px;
+  padding-bottom: 0;
+  letter-spacing: normal;
+}
+
+.image-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+footer .image-logo {
+  background: transparent;
+  width: 150px;
+  height: 94px;
+}
+
+.header .image-logo {
+  width: 150px;
+  height: 96px;
+}
+
+.header {
+  height: 108px;
+}
 
 @media (max-width: 900px) {
   .header { padding-left: 24px; padding-right: 24px; }
@@ -41,7 +71,8 @@ img { max-width: 100%; }
 
 @media (max-width: 600px) {
   .announcement { height: auto; min-height: 38px; padding: 7px 14px; line-height: 1.35; }
-  .header { padding: 0 12px; }
+  .header { height: 78px; padding: 0 12px; }
+  .header .image-logo { width: 112px; height: 68px; }
   .actions { align-items: center; }
   .icon, .menu { width: 38px; min-width: 38px; height: 44px; padding: 0; }
   .search-toggle { display: block; }
@@ -99,4 +130,24 @@ img { max-width: 100%; }
   .filters { margin-right: -12px; padding-right: 12px; }
   .product-grid { gap: 24px 6px; }
   .badge { font-size: 7px; padding: 5px 7px; }
+}
+/* Enquadramento exclusivo do banner principal com produto real do catálogo. */
+.hero.real-product-hero {
+  background: #f7ead9;
+}
+
+.hero.real-product-hero > img {
+  object-fit: cover;
+  object-position: right center;
+}
+
+.hero.real-product-hero .shade {
+  background: linear-gradient(90deg, #090504e8 0%, #140707d8 36%, #14070770 58%, transparent 78%);
+}
+
+@media (max-width: 600px) {
+  .hero.real-product-hero > img {
+    object-fit: cover;
+    object-position: 63% center;
+  }
 }

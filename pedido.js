@@ -90,7 +90,7 @@
 
     rodape.hidden = false;
     totalElemento.textContent = moeda(totalPedido());
-    botaoWhatsApp.href = `https://wa.me/5511959744633?text=${encodeURIComponent(mensagemWhatsApp())}`;
+    botaoWhatsApp.href = `https://wa.me/5511979716743?text=${encodeURIComponent(mensagemWhatsApp())}`;
   }
 
   function abrir() {

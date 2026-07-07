@@ -3,17 +3,48 @@ let termo = "";
 const grade = document.querySelector("#productGrid");
 const brincos = window.BRINCOS;
 
+function intercalarCategorias(produtos) {
+  const ordem = ["brincos", "relogios", "colares", "conjuntos", "pulseiras", "aneis"];
+  const grupos = new Map();
+  produtos.forEach(produto => {
+    if (!grupos.has(produto.categoria)) grupos.set(produto.categoria, []);
+    grupos.get(produto.categoria).push(produto);
+  });
+
+  const categorias = [
+    ...ordem.filter(categoria => grupos.has(categoria)),
+    ...[...grupos.keys()].filter(categoria => !ordem.includes(categoria))
+  ];
+  const resultado = [];
+  let adicionou = true;
+
+  while (adicionou) {
+    adicionou = false;
+    categorias.forEach(categoria => {
+      const item = grupos.get(categoria)?.shift();
+      if (item) {
+        resultado.push(item);
+        adicionou = true;
+      }
+    });
+  }
+
+  return resultado;
+}
+
 function renderizar() {
-  const lista = brincos.filter(produto =>
+  const produtosFiltrados = brincos.filter(produto =>
     (filtro === "todos" || produto.categoria === filtro) &&
     produto.nome.toLowerCase().includes(termo)
   );
+  const lista = filtro === "todos" ? intercalarCategorias(produtosFiltrados) : produtosFiltrados;
 
   grade.innerHTML = lista.map(produto => {
     const tipoProduto = {
       conjuntos: "Conjunto de semijoias",
       relogios: "Relógio feminino",
-      pulseiras: "Pulseira feminina"
+      pulseiras: "Pulseira feminina",
+      colares: "Colar feminino"
     }[produto.categoria] || "Brinco dourado";
     return `
       <article class="product-card">
