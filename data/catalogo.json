@@ -51,20 +51,16 @@
   ],
   "produtos": [
     {
-      "imagensAdicionais": [
-        {
-          "imagem": "/assets/uploads/imagem-5-gerada.png"
-        }
-      ],
+      "imagensAdicionais": [],
       "destaque": false,
       "descricao": "Círculos torcidos com acabamento dourado e presença elegante.",
       "ordem": 1,
-      "preco": 8,
+      "preco": 9.99,
       "precoPromocional": "",
       "uso": "assets/brincos/uso-01.png",
       "imagem": "assets/brincos/brinco-01.jpg",
       "categoria": "brincos",
-      "disponivel": true,
+      "disponivel": false,
       "nome": "Argola Trançada",
       "id": "brinco-01"
     },
