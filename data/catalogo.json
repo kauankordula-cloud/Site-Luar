@@ -60,7 +60,7 @@
       "descricao": "Círculos torcidos com acabamento dourado e presença elegante.",
       "ordem": 1,
       "preco": 9.99,
-      "precoPromocional": null,
+      "precoPromocional": 5,
       "uso": "assets/brincos/uso-01.png",
       "imagem": "assets/brincos/brinco-01.jpg",
       "categoria": "brincos",
