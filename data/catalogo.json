@@ -60,7 +60,7 @@
       "uso": "assets/brincos/uso-01.png",
       "imagem": "assets/brincos/brinco-01.jpg",
       "categoria": "brincos",
-      "disponivel": false,
+      "disponivel": true,
       "nome": "Argola Trançada",
       "id": "brinco-01"
     },
