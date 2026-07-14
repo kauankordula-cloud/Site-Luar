@@ -1,10 +1,41 @@
 let filtro = "todos";
 let termo = "";
 const grade = document.querySelector("#productGrid");
-const brincos = window.BRINCOS;
+const brincos = window.BRINCOS || [];
+const categoriasCatalogo = (window.CATEGORIAS || []).filter(categoria => categoria.menu !== false);
+const precoProduto = window.precoProdutoLuar || (produto => produto.preco);
+
+function categoriasOrdenadas() {
+  return [...categoriasCatalogo].sort((a, b) => a.ordem - b.ordem);
+}
+
+function categoriaPorId(id) {
+  return categoriasCatalogo.find(categoria => categoria.id === id);
+}
+
+function textoTipoProduto(produto) {
+  const categoria = categoriaPorId(produto.categoria);
+  return categoria?.singular || "Modelo feminino";
+}
+
+function montarNavegacaoCategorias() {
+  const navegacao = document.querySelector("#mainNav");
+  if (navegacao) {
+    navegacao.innerHTML = `<a href="#produtos">Novidades</a>` + categoriasOrdenadas()
+      .map(categoria => `<a href="#produtos" data-filter-link="${categoria.id}">${categoria.nome}</a>`)
+      .join("");
+  }
+
+  const filtros = document.querySelector(".filters");
+  if (filtros) {
+    filtros.innerHTML = `<button class="filter active" data-filter="todos">Todos</button>` + categoriasOrdenadas()
+      .map(categoria => `<button class="filter" data-filter="${categoria.id}">${categoria.nome}</button>`)
+      .join("");
+  }
+}
 
 function intercalarCategorias(produtos) {
-  const ordem = ["brincos", "relogios", "colares", "conjuntos", "pulseiras", "aneis"];
+  const ordem = categoriasOrdenadas().map(categoria => categoria.id);
   const grupos = new Map();
   produtos.forEach(produto => {
     if (!grupos.has(produto.categoria)) grupos.set(produto.categoria, []);
@@ -39,27 +70,19 @@ function renderizar() {
   );
   const lista = filtro === "todos" ? intercalarCategorias(produtosFiltrados) : produtosFiltrados;
 
-  grade.innerHTML = lista.map(produto => {
-    const tipoProduto = {
-      conjuntos: "Conjunto de semijoias",
-      relogios: "Relógio feminino",
-      pulseiras: "Pulseira feminina",
-      colares: "Colar feminino"
-    }[produto.categoria] || "Brinco dourado";
-    return `
+  grade.innerHTML = lista.map(produto => `
       <article class="product-card">
         <a class="product-image" href="produto.html?id=${produto.id}">
           <img src="${produto.imagem}" alt="${produto.nome}" loading="lazy">
         </a>
         <button class="favorite" aria-label="Favoritar ${produto.nome}">♡</button>
         <div class="product-info">
-          <div><h3><a href="produto.html?id=${produto.id}">${produto.nome}</a></h3><span class="price">${produto.preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</span></div>
-          <p>${tipoProduto}</p>
+          <div><h3><a href="produto.html?id=${produto.id}">${produto.nome}</a></h3><span class="price">${precoProduto(produto).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</span></div>
+          <p>${textoTipoProduto(produto)}</p>
           <a class="product-link" href="produto.html?id=${produto.id}">Ver detalhes →</a>
           <button class="order-add" type="button" data-add-order="${produto.id}">Adicionar ao pedido</button>
         </div>
-      </article>`;
-  }).join("");
+      </article>`).join("");
 
   document.querySelector(".empty").hidden = lista.length > 0;
 }
@@ -71,6 +94,8 @@ function selecionarFiltro(valor) {
   );
   renderizar();
 }
+
+montarNavegacaoCategorias();
 
 document.querySelectorAll(".filter").forEach(botao =>
   botao.addEventListener("click", () => selecionarFiltro(botao.dataset.filter))

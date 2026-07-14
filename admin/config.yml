@@ -1,0 +1,51 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+publish_mode: editorial_workflow
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "catalogo"
+    label: "Catálogo"
+    files:
+      - name: "produtos_e_categorias"
+        label: "Produtos e categorias"
+        file: "data/catalogo.json"
+        format: "json"
+        fields:
+          - label: "Categorias"
+            name: "categorias"
+            widget: "list"
+            summary: "{{fields.nome}}"
+            fields:
+              - { label: "ID da categoria", name: "id", widget: "string", hint: "Use sem espaços. Exemplo: colares, brincos, conjuntos." }
+              - { label: "Nome exibido", name: "nome", widget: "string" }
+              - { label: "Texto no produto", name: "singular", widget: "string", required: false }
+              - { label: "Título da coleção", name: "colecao", widget: "string", required: false }
+              - { label: "Ordem", name: "ordem", widget: "number", value_type: "int", default: 1 }
+              - { label: "Mostrar no menu/filtros", name: "menu", widget: "boolean", default: true }
+          - label: "Produtos"
+            name: "produtos"
+            widget: "list"
+            summary: "{{fields.nome}} — {{fields.categoria}}"
+            fields:
+              - { label: "ID do produto", name: "id", widget: "string", hint: "Não use espaços. Exemplo: brinco-01 ou colar-flor-cristal." }
+              - { label: "Nome do produto", name: "nome", widget: "string" }
+              - { label: "Preço", name: "preco", widget: "number", value_type: "float", min: 0, step: 0.01 }
+              - { label: "Preço promocional", name: "precoPromocional", widget: "number", value_type: "float", min: 0, step: 0.01, required: false }
+              - { label: "Categoria", name: "categoria", widget: "string", hint: "Digite o ID da categoria cadastrada acima. Exemplo: brincos." }
+              - { label: "Descrição", name: "descricao", widget: "text", required: false }
+              - { label: "Imagem principal", name: "imagem", widget: "image" }
+              - { label: "Imagem em uso / secundária", name: "uso", widget: "image", required: false }
+              - label: "Imagens adicionais"
+                name: "imagensAdicionais"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Imagem", name: "imagem", widget: "image" }
+              - { label: "Disponível no site", name: "disponivel", widget: "boolean", default: true }
+              - { label: "Produto em destaque", name: "destaque", widget: "boolean", default: false }
+              - { label: "Ordem de exibição", name: "ordem", widget: "number", value_type: "int", default: 1 }

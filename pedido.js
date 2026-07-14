@@ -1,6 +1,7 @@
 (() => {
   const CHAVE = "luar-carrinho-pedido";
   const produtos = window.BRINCOS || [];
+  const precoProduto = window.precoProdutoLuar || (produto => produto.preco);
   const porId = new Map(produtos.map(produto => [produto.id, produto]));
   const painel = document.querySelector("#orderCart");
   const fundo = document.querySelector(".order-backdrop");
@@ -39,15 +40,16 @@
   function totalPedido() {
     return carrinho.reduce((total, item) => {
       const produto = porId.get(item.id);
-      return total + produto.preco * item.quantidade;
+      return total + precoProduto(produto) * item.quantidade;
     }, 0);
   }
 
   function mensagemWhatsApp() {
     const linhas = carrinho.map(item => {
       const produto = porId.get(item.id);
-      const subtotal = produto.preco * item.quantidade;
-      return `${item.quantidade}x ${produto.nome} - ${moeda(produto.preco)} cada - Subtotal: ${moeda(subtotal)}`;
+      const preco = precoProduto(produto);
+      const subtotal = preco * item.quantidade;
+      return `${item.quantidade}x ${produto.nome} - ${moeda(preco)} cada - Subtotal: ${moeda(subtotal)}`;
     });
     return `Olá! Tenho interesse nos seguintes produtos:\n\n${linhas.join("\n")}\n\nTotal do pedido: ${moeda(totalPedido())}`;
   }
@@ -68,13 +70,14 @@
 
     lista.innerHTML = carrinho.map(item => {
       const produto = porId.get(item.id);
-      const subtotal = produto.preco * item.quantidade;
+      const preco = precoProduto(produto);
+      const subtotal = preco * item.quantidade;
       return `
         <article class="order-line" data-order-id="${produto.id}">
           <img class="order-thumb" src="${produto.imagem}" alt="${produto.nome}">
           <div class="order-line-info">
             <h3>${produto.nome}</h3>
-            <p>${moeda(produto.preco)} cada</p>
+            <p>${moeda(preco)} cada</p>
             <div class="order-quantity" aria-label="Quantidade de ${produto.nome}">
               <button type="button" data-order-action="decrease" aria-label="Diminuir quantidade">−</button>
               <strong>${item.quantidade}</strong>
