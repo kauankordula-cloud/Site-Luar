@@ -861,6 +861,87 @@
       "disponivel": true,
       "nome": "Colar Riviera Cristal",
       "id": "colar-04"
+    },
+    {
+      "destaque": false,
+      "descricao": "",
+      "ordem": 59,
+      "preco": 24.9,
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.50.jpeg",
+      "categoria": "pulseiras",
+      "disponivel": true,
+      "nome": "Bracelete Riviera Lumière Dourado",
+      "id": "bracelete-novo-01"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 60,
+      "nome": "Bracelete Folhagem de Cristais Dourado",
+      "id": "Bracelete-Folhagem-de-Cristais-Dourado",
+      "preco": 24.9,
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.49.jpeg",
+      "categoria": "pulseiras"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 61,
+      "id": "Bracelete-Jardim-Encantado-Dourado",
+      "nome": "Bracelete Jardim Encantado Dourado",
+      "preco": 24.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.50-1-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 62,
+      "id": "Bracelete-Trama-Imperial-Dourado",
+      "nome": "Bracelete Trama Imperial Dourado",
+      "preco": 24.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.50-2-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 63,
+      "id": "Bracelete-Trevo-Essenza-Dourado",
+      "nome": "Bracelete Trevo Essenza Dourado",
+      "preco": 24.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.50.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 64,
+      "id": "Bracelete-Trevo-Radiante-Dourado",
+      "nome": "Bracelete Trevo Radiante Dourado",
+      "preco": 24.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.05.32-1-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 65,
+      "id": "Bracelete-Trevo-Madrepérola-Dourado",
+      "nome": "Bracelete Trevo Madrepérola Dourado",
+      "preco": 24.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/screenshot_14.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 66,
+      "id": "Bracelete-Aro-Urbano-Dourado",
+      "nome": "Bracelete Aro Urbano Dourado",
+      "preco": 24.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/screenshot_1.png"
     }
   ]
 }
