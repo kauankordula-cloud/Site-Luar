@@ -942,6 +942,38 @@
       "preco": 24.9,
       "categoria": "pulseiras",
       "imagem": "/assets/uploads/screenshot_1.png"
+    },
+    {
+      "destaque": false,
+      "ordem": 67,
+      "preco": 24.9,
+      "uso": "/assets/uploads/whatsapp-image-2026-07-15-at-18.07.582313.jpeg",
+      "imagem": "/assets/uploads/dasdada.png",
+      "categoria": "conjuntos",
+      "disponivel": true,
+      "nome": "Conjunto Infinito Radiante Dourado",
+      "id": "Conjunto-Infinito-Radiante-Dourado"
+    },
+    {
+      "destaque": false,
+      "ordem": 68,
+      "preco": 24.9,
+      "uso": "/assets/uploads/whatsapp-image-2026-07-15-at-18.07.58.jpeg",
+      "imagem": "/assets/uploads/screenshot_2.png",
+      "categoria": "conjuntos",
+      "disponivel": true,
+      "nome": "Conjunto Árvore da Vida Dourado",
+      "id": "Conjunto-Árvore-da-Vida-Dourado"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 69,
+      "id": "ConjuntoTrioEsmeraldaDourado",
+      "nome": "Conjunto Trio Esmeralda Dourado",
+      "preco": 24.9,
+      "categoria": "conjuntos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.07.5931231.jpeg"
     }
   ]
 }
