@@ -974,6 +974,16 @@
       "preco": 24.9,
       "categoria": "conjuntos",
       "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.07.5931231.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 70,
+      "id": "PulseiraDuplaRivieraSafiDourada",
+      "nome": "Pulseira Dupla Riviera Safira Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/0.png"
     }
   ]
 }
