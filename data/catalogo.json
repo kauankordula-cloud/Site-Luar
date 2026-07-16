@@ -1104,6 +1104,56 @@
       "preco": 14.9,
       "categoria": "pulseiras",
       "imagem": "/assets/uploads/z.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 83,
+      "id": "BrincoInfinito",
+      "nome": "Brinco Infinito Radiante Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-1-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 84,
+      "id": "BrincoFlor",
+      "nome": "Brinco Flor de Madrepérola Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-2-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 85,
+      "id": "BrincoFolha",
+      "nome": "Brinco Folha Tropical Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-3-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 86,
+      "id": "BrincoArgola",
+      "nome": "Brinco Argola Clássica Dourada",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-4-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 87,
+      "id": "BrincoOndas",
+      "nome": "Brinco Ondas de Luz Dourado",
+      "preco": 19.89,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05.jpeg"
     }
   ]
 }
