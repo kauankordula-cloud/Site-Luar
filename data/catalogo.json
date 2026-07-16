@@ -1119,7 +1119,7 @@
       "disponivel": true,
       "destaque": false,
       "ordem": 84,
-      "id": "BrincoFlor",
+      "id": "BrincoFlor343555",
       "nome": "Brinco Flor de Madrepérola Dourado",
       "preco": 19.9,
       "categoria": "brincos",
@@ -1154,6 +1154,56 @@
       "preco": 19.89,
       "categoria": "brincos",
       "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 88,
+      "id": "BrincoFlor323",
+      "nome": "Brinco Flor Solar Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.06-1-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 89,
+      "id": "BrincoFlor",
+      "nome": "Brinco Flor de Cristal Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.06.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 90,
+      "id": "BrincoFlor1",
+      "nome": "Brinco Flor Delicata Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.13.19-1-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 91,
+      "id": "BrincoCoração",
+      "nome": "Brinco Coração Alado Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.13.19-2-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 92,
+      "id": "BrincoEsfera",
+      "nome": "Brinco Esfera Minimalista Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.13.19.jpeg"
     }
   ]
 }
