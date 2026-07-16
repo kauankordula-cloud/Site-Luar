@@ -1064,6 +1064,46 @@
       "preco": 14.9,
       "categoria": "pulseiras",
       "imagem": "/assets/uploads/n.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 79,
+      "id": "PulseiraDupla",
+      "nome": "Pulseira Dupla Ônix Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/v.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 80,
+      "id": "PulseiraFlor",
+      "nome": "Pulseira Flor de Cristal Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/v1.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 81,
+      "id": "PulseiraCorações",
+      "nome": "Pulseira Corações e Pérolas Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/x.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 82,
+      "id": "PulseiraTrio",
+      "nome": "Pulseira Trio de Trevos Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/z.png"
     }
   ]
 }
