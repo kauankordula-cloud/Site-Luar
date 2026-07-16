@@ -984,6 +984,26 @@
       "preco": 14.9,
       "categoria": "pulseiras",
       "imagem": "/assets/uploads/0.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 71,
+      "id": "ColarDuplo",
+      "nome": "Colar Duplo Trevo Ônix Dourado",
+      "preco": 19.9,
+      "categoria": "colares",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.15.23.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 72,
+      "id": "ColarRaízes",
+      "nome": "Colar Raízes da Vida Dourado",
+      "preco": 19.9,
+      "categoria": "colares",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.15.24.jpeg"
     }
   ]
 }
