@@ -823,20 +823,6 @@
     {
       "imagensAdicionais": [],
       "destaque": false,
-      "descricao": "Choker dourada com corrente lisa e pingente de cristal delicado.",
-      "ordem": 56,
-      "preco": 19.9,
-      "precoPromocional": null,
-      "uso": "assets/colares/uso-02.png",
-      "imagem": "assets/colares/colar-02.png",
-      "categoria": "colares",
-      "disponivel": true,
-      "nome": "Colar Choker Ponto de Luz",
-      "id": "colar-02"
-    },
-    {
-      "imagensAdicionais": [],
-      "destaque": false,
       "descricao": "Colar dourado com pingente de folha em detalhes escuros e cristais.",
       "ordem": 57,
       "preco": 19.9,
