@@ -1024,6 +1024,26 @@
       "preco": 14.9,
       "categoria": "pulseiras",
       "imagem": "/assets/uploads/b.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 75,
+      "id": "Pulseiratrevo",
+      "nome": "Pulseira Trevo Esmeralda Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/b1.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 76,
+      "id": "PulseiraGota",
+      "nome": "Pulseira Gota Esmeralda Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/c.png"
     }
   ]
 }
