@@ -1004,6 +1004,26 @@
       "preco": 19.9,
       "categoria": "colares",
       "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.15.24.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 73,
+      "id": "PulseiraEsferas",
+      "nome": "Pulseira Esferas Elegance Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/01.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 74,
+      "id": "PulseiraMedalhas",
+      "nome": "Pulseira Medalhas Minimalistas Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/b.png"
     }
   ]
 }
