@@ -55,7 +55,7 @@
       "destaque": false,
       "descricao": "Círculos torcidos com acabamento dourado e presença elegante.",
       "ordem": 1,
-      "preco": 9.99,
+      "preco": 15,
       "precoPromocional": "",
       "uso": "assets/brincos/uso-01.png",
       "imagem": "assets/brincos/brinco-01.jpg",
@@ -823,20 +823,6 @@
     {
       "imagensAdicionais": [],
       "destaque": false,
-      "descricao": "Choker dourada com corrente lisa e pingente de cristal delicado.",
-      "ordem": 56,
-      "preco": 19.9,
-      "precoPromocional": null,
-      "uso": "assets/colares/uso-02.png",
-      "imagem": "assets/colares/colar-02.png",
-      "categoria": "colares",
-      "disponivel": true,
-      "nome": "Colar Choker Ponto de Luz",
-      "id": "colar-02"
-    },
-    {
-      "imagensAdicionais": [],
-      "destaque": false,
       "descricao": "Colar dourado com pingente de folha em detalhes escuros e cristais.",
       "ordem": 57,
       "preco": 19.9,
@@ -861,6 +847,379 @@
       "disponivel": true,
       "nome": "Colar Riviera Cristal",
       "id": "colar-04"
+    },
+    {
+      "destaque": false,
+      "descricao": "",
+      "ordem": 59,
+      "preco": 24.9,
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.50.jpeg",
+      "categoria": "pulseiras",
+      "disponivel": true,
+      "nome": "Bracelete Riviera Lumière Dourado",
+      "id": "bracelete-novo-01"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 60,
+      "nome": "Bracelete Folhagem de Cristais Dourado",
+      "id": "Bracelete-Folhagem-de-Cristais-Dourado",
+      "preco": 24.9,
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.49.jpeg",
+      "categoria": "pulseiras"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 61,
+      "id": "Bracelete-Jardim-Encantado-Dourado",
+      "nome": "Bracelete Jardim Encantado Dourado",
+      "preco": 24.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.50-1-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 62,
+      "id": "Bracelete-Trama-Imperial-Dourado",
+      "nome": "Bracelete Trama Imperial Dourado",
+      "preco": 24.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.50-2-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 63,
+      "id": "Bracelete-Trevo-Essenza-Dourado",
+      "nome": "Bracelete Trevo Essenza Dourado",
+      "preco": 24.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.50.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 64,
+      "id": "Bracelete-Trevo-Radiante-Dourado",
+      "nome": "Bracelete Trevo Radiante Dourado",
+      "preco": 24.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.05.32-1-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 65,
+      "id": "Bracelete-Trevo-Madrepérola-Dourado",
+      "nome": "Bracelete Trevo Madrepérola Dourado",
+      "preco": 24.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/screenshot_14.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 66,
+      "id": "Bracelete-Aro-Urbano-Dourado",
+      "nome": "Bracelete Aro Urbano Dourado",
+      "preco": 24.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/screenshot_1.png"
+    },
+    {
+      "destaque": false,
+      "ordem": 67,
+      "preco": 24.9,
+      "uso": "/assets/uploads/whatsapp-image-2026-07-15-at-18.07.582313.jpeg",
+      "imagem": "/assets/uploads/123.png",
+      "categoria": "conjuntos",
+      "disponivel": true,
+      "nome": "Conjunto Infinito Radiante Dourado",
+      "id": "Conjunto-Infinito-Radiante-Dourado"
+    },
+    {
+      "destaque": false,
+      "ordem": 68,
+      "preco": 24.9,
+      "uso": "/assets/uploads/whatsapp-image-2026-07-15-at-18.07.58.jpeg",
+      "imagem": "/assets/uploads/cscaca.png",
+      "categoria": "conjuntos",
+      "disponivel": true,
+      "nome": "Conjunto Árvore da Vida Dourado",
+      "id": "Conjunto-Árvore-da-Vida-Dourado"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 69,
+      "id": "ConjuntoTrioEsmeraldaDourado",
+      "nome": "Conjunto Trio Esmeralda Dourado",
+      "preco": 24.9,
+      "categoria": "conjuntos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.07.5931231.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 70,
+      "id": "PulseiraDuplaRivieraSafiDourada",
+      "nome": "Pulseira Dupla Riviera Safira Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/0.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 71,
+      "id": "ColarDuplo",
+      "nome": "Colar Duplo Trevo Ônix Dourado",
+      "preco": 19.9,
+      "categoria": "colares",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.15.23.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 72,
+      "id": "ColarRaízes",
+      "nome": "Colar Raízes da Vida Dourado",
+      "preco": 19.9,
+      "categoria": "colares",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.15.24.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 73,
+      "id": "PulseiraEsferas",
+      "nome": "Pulseira Esferas Elegance Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/01.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 74,
+      "id": "PulseiraMedalhas",
+      "nome": "Pulseira Medalhas Minimalistas Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/b.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 75,
+      "id": "Pulseiratrevo",
+      "nome": "Pulseira Trevo Esmeralda Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/b1.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 76,
+      "id": "PulseiraGota",
+      "nome": "Pulseira Gota Esmeralda Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/c.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 77,
+      "id": "PulseiraFolhas",
+      "nome": "Pulseira Folhas de Luz Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/c1.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 78,
+      "id": "PulseiraTrio",
+      "nome": "Pulseira Trio de Flores Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/n.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 79,
+      "id": "PulseiraDupla",
+      "nome": "Pulseira Dupla Ônix Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/v.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 80,
+      "id": "PulseiraFlor",
+      "nome": "Pulseira Flor de Cristal Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/v1.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 81,
+      "id": "PulseiraCorações",
+      "nome": "Pulseira Corações e Pérolas Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/x.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 82,
+      "id": "PulseiraTrio",
+      "nome": "Pulseira Trio de Trevos Dourada",
+      "preco": 14.9,
+      "categoria": "pulseiras",
+      "imagem": "/assets/uploads/z.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 83,
+      "id": "BrincoInfinito",
+      "nome": "Brinco Infinito Radiante Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-1-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 84,
+      "id": "BrincoFlor343555",
+      "nome": "Brinco Flor de Madrepérola Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-2-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 85,
+      "id": "BrincoFolha",
+      "nome": "Brinco Folha Tropical Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-3-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 86,
+      "id": "BrincoArgola",
+      "nome": "Brinco Argola Clássica Dourada",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-4-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 87,
+      "id": "BrincoOndas",
+      "nome": "Brinco Ondas de Luz Dourado",
+      "preco": 19.89,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 88,
+      "id": "BrincoFlor323",
+      "nome": "Brinco Flor Solar Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.06-1-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 89,
+      "id": "BrincoFlor",
+      "nome": "Brinco Flor de Cristal Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.06.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 90,
+      "id": "BrincoFlor1",
+      "nome": "Brinco Flor Delicata Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.13.19-1-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 91,
+      "id": "BrincoCoração",
+      "nome": "Brinco Coração Alado Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.13.19-2-.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 92,
+      "id": "BrincoEsfera",
+      "nome": "Brinco Esfera Minimalista Dourado",
+      "preco": 19.9,
+      "categoria": "brincos",
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.13.19.jpeg"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 93,
+      "id": "ColarPérolas323232",
+      "nome": "Colar Pérolas Clássicas Dourado",
+      "preco": 19.9,
+      "categoria": "colares",
+      "imagem": "/assets/uploads/ç.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 94,
+      "id": "ColarRiviera",
+      "nome": "Colar Riviera Delicata Dourado",
+      "preco": 19.9,
+      "categoria": "colares",
+      "imagem": "/assets/uploads/çç.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 95,
+      "id": "ColarFolhagem",
+      "nome": "Colar Folhagem Elegance Dourado",
+      "preco": 19.9,
+      "categoria": "colares",
+      "imagem": "/assets/uploads/l.png"
     }
   ]
 }
