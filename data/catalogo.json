@@ -389,20 +389,6 @@
     {
       "imagensAdicionais": [],
       "destaque": false,
-      "descricao": "Colar e brincos com pedras verdes em formato de gota e cristais.",
-      "ordem": 25,
-      "preco": 25,
-      "precoPromocional": null,
-      "uso": "assets/conjuntos/uso-05.jpeg",
-      "imagem": "assets/conjuntos/conjunto-05.png",
-      "categoria": "conjuntos",
-      "disponivel": true,
-      "nome": "Conjunto Esmeralda",
-      "id": "conjunto-05"
-    },
-    {
-      "imagensAdicionais": [],
-      "destaque": false,
       "descricao": "Colar e brincos de coração contornados por cristais delicados.",
       "ordem": 26,
       "preco": 25,
@@ -539,34 +525,6 @@
       "disponivel": true,
       "nome": "Conjunto Sol Radiante",
       "id": "conjunto-18"
-    },
-    {
-      "imagensAdicionais": [],
-      "destaque": false,
-      "descricao": "Colar e brincos com pedra verde em formato de gota e acabamento dourado.",
-      "ordem": 36,
-      "preco": 25,
-      "precoPromocional": null,
-      "uso": "assets/conjuntos/uso-19.png",
-      "imagem": "assets/conjuntos/conjunto-19.png",
-      "categoria": "conjuntos",
-      "disponivel": true,
-      "nome": "Conjunto Gota Esmeralda",
-      "id": "conjunto-19"
-    },
-    {
-      "imagensAdicionais": [],
-      "destaque": false,
-      "descricao": "Colar e brincos com pedra azul central e contorno de cristais.",
-      "ordem": 37,
-      "preco": 25,
-      "precoPromocional": null,
-      "uso": "assets/conjuntos/uso-20.png",
-      "imagem": "assets/conjuntos/conjunto-20.png",
-      "categoria": "conjuntos",
-      "disponivel": true,
-      "nome": "Conjunto Safira Lumina",
-      "id": "conjunto-20"
     },
     {
       "imagensAdicionais": [],
