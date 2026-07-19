@@ -1014,6 +1014,16 @@
       "preco": 19.9,
       "categoria": "colares",
       "imagem": "/assets/uploads/l.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 80,
+      "id": "Colar-pedras",
+      "nome": "Colar De Pedras",
+      "preco": 19.9,
+      "categoria": "colares",
+      "imagem": "/assets/uploads/0.png"
     }
   ]
 }
