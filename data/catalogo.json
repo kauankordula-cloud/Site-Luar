@@ -1014,18 +1014,6 @@
       "preco": 19.9,
       "categoria": "colares",
       "imagem": "/assets/uploads/l.png"
-    },
-    {
-      "destaque": false,
-      "descricao": "123",
-      "ordem": 1,
-      "preco": 123,
-      "precoPromocional": 123,
-      "imagem": "/assets/uploads/anexo-do-usuário.png",
-      "categoria": "brincos",
-      "disponivel": true,
-      "nome": "123",
-      "id": "123-32"
     }
   ]
 }
