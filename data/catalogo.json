@@ -487,15 +487,15 @@
     {
       "imagensAdicionais": [],
       "destaque": false,
-      "descricao": "Relógio feminino dourado com mostrador interno amarelo.",
+      "descricao": "Relógio feminino dourado com mostrador interno dourado",
       "ordem": 39,
-      "preco": 59.9,
-      "precoPromocional": null,
+      "preco": 59.85,
+      "precoPromocional": 49.88,
       "uso": "",
       "imagem": "assets/relogios/relogio-amarelo.jpeg",
       "categoria": "relogios",
       "disponivel": true,
-      "nome": "Relógio Feminino - Amarelo",
+      "nome": "Relógio Feminino Dourado",
       "id": "relogio-amarelo"
     },
     {
