@@ -1018,7 +1018,7 @@
     {
       "destaque": false,
       "descricao": "123",
-      "ordem": 80,
+      "ordem": 1,
       "preco": 123,
       "precoPromocional": 123,
       "imagem": "/assets/uploads/anexo-do-usuário.png",
