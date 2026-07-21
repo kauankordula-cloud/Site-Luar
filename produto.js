@@ -17,6 +17,27 @@ function categoriaProduto(categoriaId) {
   };
 }
 
+function tamanhosProduto(item) {
+  return Array.isArray(item.tamanhos) ? item.tamanhos.filter(Boolean) : [];
+}
+
+function seletorTamanhos(item) {
+  const tamanhos = tamanhosProduto(item);
+  if (!tamanhos.length) return "";
+
+  return `
+      <fieldset class="size-selector" aria-label="Selecionar tamanho do anel">
+        <legend>Tamanho disponível</legend>
+        <div>
+          ${tamanhos.map((tamanho, indice) => `
+            <label>
+              <input type="radio" name="tamanho-produto" value="${tamanho}" ${indice === 0 ? "checked" : ""}>
+              <span>${tamanho}</span>
+            </label>`).join("")}
+        </div>
+      </fieldset>`;
+}
+
 if (!produto) {
   pagina.innerHTML = `<div class="not-found"><h1>Peça não encontrada</h1><a href="index.html#produtos">Voltar ao catálogo</a></div>`;
 } else {
@@ -29,6 +50,8 @@ if (!produto) {
     produto.uso,
     ...(Array.isArray(produto.imagensAdicionais) ? produto.imagensAdicionais : [])
   ].filter(Boolean);
+  const tamanhos = tamanhosProduto(produto);
+  const tamanhoInicial = tamanhos[0] || "";
 
   pagina.innerHTML = `
     <section class="product-gallery">
@@ -45,7 +68,15 @@ if (!produto) {
         <li>Seleção exclusiva LUAR</li>
       </ul>
       <p class="consult-price">${precoProduto(produto).toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</p>
-      <button class="whatsapp-button order-add" type="button" data-add-order="${produto.id}">Adicionar ao pedido <span>+</span></button>
+      ${seletorTamanhos(produto)}
+      <button class="whatsapp-button order-add" type="button" data-add-order="${produto.id}" ${tamanhoInicial ? `data-order-size="${tamanhoInicial}"` : ""}>Adicionar ao pedido <span>+</span></button>
       <p class="reservation-note">Monte seu pedido e envie todos os itens pelo WhatsApp.</p>
     </section>`;
+
+  pagina.querySelectorAll('input[name="tamanho-produto"]').forEach(input => {
+    input.addEventListener("change", () => {
+      const botao = pagina.querySelector("[data-add-order]");
+      if (botao) botao.dataset.orderSize = input.value;
+    });
+  });
 }

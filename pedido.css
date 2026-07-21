@@ -10,6 +10,7 @@
 .order-line-info { min-width: 0; }
 .order-line-info h3 { margin: 0 0 5px; font: 600 16px "Playfair Display", serif; }
 .order-line-info p { margin: 0; color: var(--muted); font-size: 10px; }
+.order-line-info .order-size { margin-bottom: 4px; color: #641a2a; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
 .order-quantity { display: inline-grid; grid-template-columns: 32px 32px 32px; align-items: center; margin-top: 13px; border: 1px solid var(--line); text-align: center; }
 .order-quantity button { width: 32px; height: 32px; border: 0; background: none; cursor: pointer; font-size: 18px; }
 .order-quantity strong { font-size: 11px; }

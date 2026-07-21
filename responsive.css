@@ -1,7 +1,96 @@
 /* Ajustes responsivos sem alterar a identidade visual */
 body { overflow-x: hidden; }
 img { max-width: 100%; }
-.cta, .whatsapp-button, .newsletter button { min-height: 44px; }
+.cta, .whatsapp-button { min-height: 44px; }
+
+.hero-carousel {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 2048 / 850;
+  background: #f7ead9;
+  overflow: hidden;
+}
+
+.hero-slides,
+.hero-slide {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-slide {
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+  background: #f7ead9;
+  transition: opacity .75s ease;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hero-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.hero-control {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  width: 46px;
+  height: 46px;
+  border: 1px solid #b7863b66;
+  border-radius: 50%;
+  background: #fff9;
+  color: #8c5f24;
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+
+.hero-control:hover {
+  background: #fff;
+  color: #5f3c13;
+  transform: translateY(-50%) scale(1.04);
+}
+
+.hero-prev { left: 22px; }
+.hero-next { right: 22px; }
+
+.hero-dots {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transform: translateX(-50%);
+}
+
+.hero-dots button {
+  width: 11px;
+  height: 11px;
+  border: 1px solid #9d672f;
+  border-radius: 50%;
+  padding: 0;
+  background: #fff9;
+  cursor: pointer;
+}
+
+.hero-dots button.active {
+  background: #9d672f;
+}
+
 .image-logo {
   display: inline-flex;
   align-items: center;
@@ -101,8 +190,6 @@ footer .image-logo {
   .editorial-img { height: min(105vw, 430px); }
   .editorial-copy { padding: 60px 22px; }
   .editorial-copy h2 { font-size: clamp(36px, 10.5vw, 46px); }
-  .newsletter { padding: 72px 18px; }
-  .newsletter h2 { font-size: clamp(34px, 10vw, 42px); }
   footer { gap: 32px 20px; }
 
   .product-page { padding: 12px 14px 70px; }
@@ -131,23 +218,90 @@ footer .image-logo {
   .product-grid { gap: 24px 6px; }
   .badge { font-size: 7px; padding: 5px 7px; }
 }
-/* Enquadramento exclusivo do banner principal com produto real do catálogo. */
-.hero.real-product-hero {
-  background: #f7ead9;
+.hero.hero-carousel {
+  height: auto;
+  min-height: 0;
 }
 
-.hero.real-product-hero > img {
-  object-fit: cover;
-  object-position: right center;
-}
+@media (max-width: 900px) {
+  .hero.hero-carousel {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 2048 / 850;
+  }
 
-.hero.real-product-hero .shade {
-  background: linear-gradient(90deg, #090504e8 0%, #140707d8 36%, #14070770 58%, transparent 78%);
+  .hero-control {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
+
+  .hero-prev { left: 14px; }
+  .hero-next { right: 14px; }
 }
 
 @media (max-width: 600px) {
-  .hero.real-product-hero > img {
-    object-fit: cover;
-    object-position: 63% center;
+  .hero.hero-carousel {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 2048 / 850;
   }
+
+  .hero-control {
+    width: 34px;
+    height: 34px;
+    font-size: 26px;
+  }
+
+  .hero-prev { left: 8px; }
+  .hero-next { right: 8px; }
+  .hero-dots { bottom: 8px; gap: 8px; }
+  .hero-dots button { width: 9px; height: 9px; }
+}
+
+@media (max-width: 900px) {
+  .hero.hero-carousel {
+    height: calc(41.5vw + 52px);
+    aspect-ratio: auto;
+  }
+
+  .hero-slides {
+    bottom: 52px;
+  }
+
+  .hero-slide { bottom: 0; }
+
+  .hero-control {
+    top: auto;
+    bottom: 7px;
+    transform: none;
+  }
+
+  .hero-control:hover {
+    transform: scale(1.04);
+  }
+
+  .hero-prev { left: calc(50% - 92px); }
+  .hero-next { right: calc(50% - 92px); }
+  .hero-dots { bottom: 22px; }
+}
+
+@media (max-width: 600px) {
+  .hero.hero-carousel {
+    height: calc(41.5vw + 44px);
+  }
+
+  .hero-slides {
+    bottom: 44px;
+  }
+
+  .hero-slide { bottom: 0; }
+
+  .hero-control {
+    bottom: 5px;
+  }
+
+  .hero-prev { left: calc(50% - 76px); }
+  .hero-next { right: calc(50% - 76px); }
+  .hero-dots { bottom: 17px; }
 }

@@ -21,7 +21,7 @@ function textoTipoProduto(produto) {
 function montarNavegacaoCategorias() {
   const navegacao = document.querySelector("#mainNav");
   if (navegacao) {
-    navegacao.innerHTML = `<a href="#produtos">Novidades</a>` + categoriasOrdenadas()
+    navegacao.innerHTML = categoriasOrdenadas()
       .map(categoria => `<a href="#produtos" data-filter-link="${categoria.id}">${categoria.nome}</a>`)
       .join("");
   }
@@ -71,7 +71,7 @@ function renderizar() {
   const lista = filtro === "todos" ? intercalarCategorias(produtosFiltrados) : produtosFiltrados;
 
   grade.innerHTML = lista.map(produto => `
-      <article class="product-card">
+      <article class="product-card" data-product-id="${produto.id}">
         <a class="product-image" href="produto.html?id=${produto.id}">
           <img src="${produto.imagem}" alt="${produto.nome}" loading="lazy">
         </a>
@@ -138,14 +138,56 @@ document.querySelector("#searchInput")?.addEventListener("input", evento => {
   selecionarFiltro("todos");
 });
 
-document.querySelector("#newsletterForm")?.addEventListener("submit", evento => {
-  evento.preventDefault();
-  const aviso = document.querySelector(".toast");
-  aviso.textContent = "Cadastro realizado com sucesso!";
-  aviso.classList.add("show");
-  setTimeout(() => aviso.classList.remove("show"), 2200);
-  evento.target.reset();
-});
+const carrosselHero = document.querySelector(".hero-carousel");
+if (carrosselHero) {
+  const slidesHero = [...carrosselHero.querySelectorAll("[data-hero-slide]")];
+  const pontosHero = [...carrosselHero.querySelectorAll("[data-hero-dot]")];
+  const anteriorHero = carrosselHero.querySelector("[data-hero-prev]");
+  const proximoHero = carrosselHero.querySelector("[data-hero-next]");
+  let slideHeroAtual = 0;
+  let intervaloHero;
+
+  function mostrarSlideHero(indice) {
+    slideHeroAtual = (indice + slidesHero.length) % slidesHero.length;
+    slidesHero.forEach((slide, posicao) =>
+      slide.classList.toggle("active", posicao === slideHeroAtual)
+    );
+    pontosHero.forEach((ponto, posicao) => {
+      const ativo = posicao === slideHeroAtual;
+      ponto.classList.toggle("active", ativo);
+      ponto.setAttribute("aria-current", String(ativo));
+    });
+  }
+
+  function reiniciarHero() {
+    clearInterval(intervaloHero);
+    intervaloHero = setInterval(() => mostrarSlideHero(slideHeroAtual + 1), 5500);
+  }
+
+  if (slidesHero.length > 1) {
+    anteriorHero?.addEventListener("click", () => {
+      mostrarSlideHero(slideHeroAtual - 1);
+      reiniciarHero();
+    });
+    proximoHero?.addEventListener("click", () => {
+      mostrarSlideHero(slideHeroAtual + 1);
+      reiniciarHero();
+    });
+    pontosHero.forEach(ponto =>
+      ponto.addEventListener("click", () => {
+        mostrarSlideHero(Number(ponto.dataset.heroDot));
+        reiniciarHero();
+      })
+    );
+    carrosselHero.addEventListener("mouseenter", () => clearInterval(intervaloHero));
+    carrosselHero.addEventListener("mouseleave", reiniciarHero);
+    carrosselHero.addEventListener("focusin", () => clearInterval(intervaloHero));
+    carrosselHero.addEventListener("focusout", reiniciarHero);
+    reiniciarHero();
+  }
+
+  mostrarSlideHero(0);
+}
 
 document.querySelectorAll(".reveal").forEach(elemento => elemento.classList.add("visible"));
 renderizar();

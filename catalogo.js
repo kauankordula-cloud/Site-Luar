@@ -1,5 +1,5 @@
 (() => {
-  const CAMINHO_CATALOGO = "data/catalogo.json";
+  const CAMINHO_CATALOGO = "data/catalogo.json?v=20";
 
   function carregarCatalogo() {
     const requisicao = new XMLHttpRequest();
