@@ -10,6 +10,7 @@
   const totalElemento = document.querySelector(".order-total");
   const contadorTexto = document.querySelector(".order-title-count");
   const botaoWhatsApp = document.querySelector(".order-whatsapp");
+  let acionadorPedido = null;
 
   let carrinho = carregar();
 
@@ -123,17 +124,23 @@
   }
 
   function abrir() {
+    window.dispatchEvent(new CustomEvent("luar:close-search"));
+    acionadorPedido = document.activeElement;
     painel?.classList.add("open");
     fundo?.classList.add("open");
     painel?.setAttribute("aria-hidden", "false");
+    document.querySelectorAll(".order-toggle").forEach(botao => botao.setAttribute("aria-expanded", "true"));
     document.body.classList.add("order-open");
+    painel?.querySelector(".order-close")?.focus();
   }
 
   function fechar() {
     painel?.classList.remove("open");
     fundo?.classList.remove("open");
     painel?.setAttribute("aria-hidden", "true");
+    document.querySelectorAll(".order-toggle").forEach(botao => botao.setAttribute("aria-expanded", "false"));
     document.body.classList.remove("order-open");
+    if (acionadorPedido && document.contains(acionadorPedido)) acionadorPedido.focus();
   }
 
   function adicionar(id, tamanho = "") {
@@ -185,9 +192,14 @@
     renderizar();
   });
 
+  document.querySelectorAll(".order-toggle").forEach(botao => {
+    botao.setAttribute("aria-expanded", "false");
+    botao.setAttribute("aria-controls", "orderCart");
+  });
   document.addEventListener("keydown", evento => {
     if (evento.key === "Escape") fechar();
   });
+  window.addEventListener("luar:close-order", fechar);
 
   renderizar();
 })();

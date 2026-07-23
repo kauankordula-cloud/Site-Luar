@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Coleção Essência LUAR Acessórios com joias folheadas selecionadas.">
+  <title>Coleção Essência | LUAR Acessórios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="products.css?v=6">
+  <link rel="stylesheet" href="responsive.css?v=10">
+  <link rel="stylesheet" href="pedido.css?v=4">
+</head>
+<body>
+  <div class="announcement">CATÁLOGO DE JOIAS FOLHEADAS LUAR <span>•</span> Atendimento pelo WhatsApp</div>
+  <header class="header">
+    <a class="logo image-logo" href="index.html#inicio" aria-label="LUAR acessórios"><img src="assets/logo-luar-acessorios.png" alt="LUAR acessórios"></a>
+    <nav id="mainNav"></nav>
+    <div class="actions">
+      <button class="icon search-toggle" type="button" aria-label="Pesquisar produtos" aria-controls="searchInput" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg></button>
+      <button class="order-toggle" type="button" aria-label="Abrir resumo do pedido"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8h10l-1 11H8L7 8Z"></path><path d="M9 8a3 3 0 0 1 6 0"></path></svg><b class="cart-count">0</b></button>
+      <button class="menu" type="button" aria-label="Menu" aria-controls="mainNav" aria-expanded="false">?</button>
+    </div>
+  </header>
+  <div class="search-panel" aria-hidden="true"><label for="searchInput">O que você procura nesta coleção?</label><div><input id="searchInput" type="search" placeholder="Ex.: pulseira dourada"><button class="search-close" type="button" aria-label="Fechar busca">×</button></div></div>
+  <main id="inicio">
+    <section class="section products collection-products" id="produtos">
+      <div class="heading reveal">
+        <div>
+          <p class="eyebrow dark">COLEÇÃO LUAR</p>
+          <h2>Coleção <em>Essência</em></h2>
+        </div>
+        <p>Uma seleção de peças douradas para compor brilho, presença e delicadeza.</p>
+      </div>
+      <div class="product-grid" id="collectionGrid"></div>
+      <p class="empty" hidden>Nenhuma joia folheada encontrada.</p>
+    </section>
+  </main>
+  <footer><a class="logo image-logo" href="index.html#inicio" aria-label="LUAR acessórios"><img src="assets/logo-luar-acessorios.png" alt="LUAR acessórios" loading="lazy"></a><div><b>Atendimento</b><a href="https://wa.me/5511979716743" target="_blank" rel="noopener">Fale conosco</a><a href="#">Cuidados com sua joia folheada</a></div><div><b>Institucional</b><a href="#">Nossa história</a><a href="#">Privacidade</a></div><div><b>Siga a LUAR</b><a href="https://www.instagram.com/____luaracessoriosoficial?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">@luaracessoriosoficial</a></div><p class="copyright">© 2026 LUAR acessórios. Todos os direitos reservados.</p></footer>
+  <div class="order-backdrop"></div><aside class="cart" id="orderCart" aria-hidden="true"><div class="cart-head"><div><p class="eyebrow dark">SEU PEDIDO</p><h2>Resumo <span class="order-title-count">(0)</span></h2></div><button class="cart-close order-close" type="button" aria-label="Fechar pedido">×</button></div><div class="cart-items order-items"></div><div class="cart-foot order-foot" hidden><div class="order-summary"><span>Total do pedido</span><b class="order-total">R$ 0,00</b></div><p>O pedido será enviado para o atendimento da LUAR.</p><a class="order-whatsapp" href="https://wa.me/5511979716743" target="_blank" rel="noopener">Enviar pedido pelo WhatsApp</a></div></aside><div class="toast"></div>
+  <script src="catalogo.js?v=24"></script>
+  <script src="colecao.js?v=6"></script>
+  <script src="pedido.js?v=8"></script>
+</body>
+</html>

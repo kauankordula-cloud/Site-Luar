@@ -4,6 +4,8 @@ const grade = document.querySelector("#productGrid");
 const brincos = window.BRINCOS || [];
 const categoriasCatalogo = (window.CATEGORIAS || []).filter(categoria => categoria.menu !== false);
 const precoProduto = window.precoProdutoLuar || (produto => produto.preco);
+const catalogoCarregado = Array.isArray(window.BRINCOS);
+let acionadorBusca = null;
 
 function categoriasOrdenadas() {
   return [...categoriasCatalogo].sort((a, b) => a.ordem - b.ordem);
@@ -64,6 +66,17 @@ function intercalarCategorias(produtos) {
 }
 
 function renderizar() {
+  if (!grade) return;
+  if (!catalogoCarregado) {
+    grade.innerHTML = "";
+    const vazio = document.querySelector(".empty");
+    if (vazio) {
+      vazio.textContent = "Não foi possível carregar o catálogo. Atualize a página e tente novamente.";
+      vazio.hidden = false;
+    }
+    return;
+  }
+
   const produtosFiltrados = brincos.filter(produto =>
     (filtro === "todos" || produto.categoria === filtro) &&
     produto.nome.toLowerCase().includes(termo)
@@ -84,7 +97,11 @@ function renderizar() {
         </div>
       </article>`).join("");
 
-  document.querySelector(".empty").hidden = lista.length > 0;
+  const vazio = document.querySelector(".empty");
+  if (vazio) {
+    vazio.textContent = "Nenhuma joia folheada encontrada.";
+    vazio.hidden = lista.length > 0;
+  }
 }
 
 function selecionarFiltro(valor) {
@@ -113,29 +130,71 @@ grade.addEventListener("click", evento => {
 });
 
 const busca = document.querySelector(".search-panel");
-document.querySelector(".search-toggle")?.addEventListener("click", () => busca.classList.add("open"));
-document.querySelector(".search-close")?.addEventListener("click", () => busca.classList.remove("open"));
+const botaoBusca = document.querySelector(".search-toggle");
+const fecharBuscaBotao = document.querySelector(".search-close");
+const entradaBusca = document.querySelector("#searchInput");
+function abrirBusca(botao) {
+  if (!busca) return;
+  window.dispatchEvent(new CustomEvent("luar:close-order"));
+  fecharMenu();
+  acionadorBusca = botao || document.activeElement;
+  busca.classList.add("open");
+  busca.setAttribute("aria-hidden", "false");
+  botaoBusca?.setAttribute("aria-expanded", "true");
+  document.body.classList.add("search-open");
+  window.setTimeout(() => entradaBusca?.focus(), 80);
+}
+function fecharBusca() {
+  if (!busca) return;
+  busca.classList.remove("open");
+  busca.setAttribute("aria-hidden", "true");
+  botaoBusca?.setAttribute("aria-expanded", "false");
+  document.body.classList.remove("search-open");
+  if (acionadorBusca && document.contains(acionadorBusca)) acionadorBusca.focus();
+}
+botaoBusca?.setAttribute("aria-expanded", "false");
+botaoBusca?.setAttribute("aria-controls", "searchInput");
+botaoBusca?.addEventListener("click", () => abrirBusca(botaoBusca));
+fecharBuscaBotao?.addEventListener("click", fecharBusca);
+window.addEventListener("luar:close-search", fecharBusca);
 
 const menu = document.querySelector(".menu");
 const navegacao = document.querySelector("#mainNav");
+function atualizarBotaoMenu(aberto) {
+  if (!menu) return;
+  menu.setAttribute("aria-expanded", String(Boolean(aberto)));
+  menu.setAttribute("aria-label", aberto ? "Fechar menu" : "Menu");
+  menu.textContent = aberto ? "×" : "☰";
+}
+atualizarBotaoMenu(false);
 function fecharMenu() {
   navegacao?.classList.remove("open");
-  menu?.setAttribute("aria-expanded", "false");
+  document.body.classList.remove("menu-open");
+  atualizarBotaoMenu(false);
 }
 menu?.addEventListener("click", () => {
   const aberto = navegacao?.classList.toggle("open");
-  menu.setAttribute("aria-expanded", String(Boolean(aberto)));
+  document.body.classList.toggle("menu-open", Boolean(aberto));
+  atualizarBotaoMenu(Boolean(aberto));
 });
 navegacao?.querySelectorAll("a").forEach(link => link.addEventListener("click", fecharMenu));
 document.addEventListener("click", evento => {
-  if (!evento.target.closest(".header")) fecharMenu();
+  if (!evento.target.closest(".header")) {
+    fecharMenu();
+    if (busca?.classList.contains("open") && !evento.target.closest(".search-panel")) fecharBusca();
+  }
 });
 window.addEventListener("resize", () => {
   if (window.innerWidth > 900) fecharMenu();
 });
-document.querySelector("#searchInput")?.addEventListener("input", evento => {
+entradaBusca?.addEventListener("input", evento => {
   termo = evento.target.value.trim().toLowerCase();
   selecionarFiltro("todos");
+});
+document.addEventListener("keydown", evento => {
+  if (evento.key !== "Escape") return;
+  fecharMenu();
+  fecharBusca();
 });
 
 const carrosselHero = document.querySelector(".hero-carousel");
@@ -146,6 +205,10 @@ if (carrosselHero) {
   const proximoHero = carrosselHero.querySelector("[data-hero-next]");
   let slideHeroAtual = 0;
   let intervaloHero;
+  let toqueHeroX = 0;
+  let toqueHeroY = 0;
+  let toqueVirouSwipe = false;
+  const distanciaMinimaSwipe = 50;
 
   function mostrarSlideHero(indice) {
     slideHeroAtual = (indice + slidesHero.length) % slidesHero.length;
@@ -179,6 +242,33 @@ if (carrosselHero) {
         reiniciarHero();
       })
     );
+    carrosselHero.addEventListener("pointerdown", evento => {
+      if (evento.isPrimary === false) return;
+      toqueHeroX = evento.clientX;
+      toqueHeroY = evento.clientY;
+      toqueVirouSwipe = false;
+    });
+    carrosselHero.addEventListener("pointerup", evento => {
+      if (evento.isPrimary === false) return;
+      const diferencaX = evento.clientX - toqueHeroX;
+      const diferencaY = evento.clientY - toqueHeroY;
+      const movimentoHorizontal = Math.abs(diferencaX) > Math.abs(diferencaY);
+
+      if (!movimentoHorizontal || Math.abs(diferencaX) < distanciaMinimaSwipe) return;
+
+      toqueVirouSwipe = true;
+      mostrarSlideHero(slideHeroAtual + (diferencaX < 0 ? 1 : -1));
+      reiniciarHero();
+    });
+    carrosselHero.addEventListener("pointercancel", () => {
+      toqueVirouSwipe = false;
+    });
+    carrosselHero.addEventListener("click", evento => {
+      if (!toqueVirouSwipe) return;
+      evento.preventDefault();
+      evento.stopPropagation();
+      toqueVirouSwipe = false;
+    }, true);
     carrosselHero.addEventListener("mouseenter", () => clearInterval(intervaloHero));
     carrosselHero.addEventListener("mouseleave", reiniciarHero);
     carrosselHero.addEventListener("focusin", () => clearInterval(intervaloHero));

@@ -525,7 +525,7 @@
       "destaque": false,
       "descricao": "Pulseira feminina dourada com detalhes sofisticados.",
       "ordem": 48,
-      "preco": 19.9,
+      "preco": 24.9,
       "precoPromocional": null,
       "uso": "assets/pulseiras/uso-05.png",
       "imagem": "assets/pulseiras/pulseira-05.png",
@@ -539,7 +539,7 @@
       "destaque": false,
       "descricao": "Pulseira feminina dourada com brilho delicado.",
       "ordem": 49,
-      "preco": 19.9,
+      "preco": 24.9,
       "precoPromocional": null,
       "uso": "assets/pulseiras/uso-06.png",
       "imagem": "assets/pulseiras/pulseira-06.png",
@@ -553,7 +553,7 @@
       "destaque": false,
       "descricao": "Pulseira feminina dourada com presença elegante.",
       "ordem": 53,
-      "preco": 19.9,
+      "preco": 14.9,
       "precoPromocional": null,
       "uso": "assets/pulseiras/uso-10.jpeg",
       "imagem": "assets/pulseiras/pulseira-10.png",
@@ -567,7 +567,7 @@
       "destaque": false,
       "descricao": "Pulseira feminina dourada de design exclusivo.",
       "ordem": 54,
-      "preco": 19.9,
+      "preco": 14.9,
       "precoPromocional": null,
       "uso": "assets/pulseiras/uso-11.png",
       "imagem": "assets/pulseiras/pulseira-11.png",
@@ -598,7 +598,8 @@
       "id": "Bracelete-Folhagem-de-Cristais-Dourado",
       "preco": 24.9,
       "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.49.jpeg",
-      "categoria": "pulseiras"
+      "categoria": "pulseiras",
+      "descricao": "Bracelete dourado com detalhes de folhagem e cristais delicados para um brilho elegante."
     },
     {
       "disponivel": true,
@@ -608,7 +609,8 @@
       "nome": "Bracelete Jardim Encantado Dourado",
       "preco": 24.9,
       "categoria": "pulseiras",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.50-1-.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.50-1-.jpeg",
+      "descricao": "Bracelete dourado com design delicado e acabamento luminoso para composições femininas."
     },
     {
       "disponivel": true,
@@ -618,7 +620,8 @@
       "nome": "Bracelete Trama Imperial Dourado",
       "preco": 24.9,
       "categoria": "pulseiras",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.50-2-.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.50-2-.jpeg",
+      "descricao": "Bracelete dourado com trama marcante e acabamento sofisticado para looks elegantes."
     },
     {
       "disponivel": true,
@@ -628,7 +631,8 @@
       "nome": "Bracelete Trevo Essenza Dourado",
       "preco": 24.9,
       "categoria": "pulseiras",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.50.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.04.50.jpeg",
+      "descricao": "Bracelete dourado com detalhe de trevo, delicado e cheio de charme."
     },
     {
       "disponivel": true,
@@ -638,7 +642,8 @@
       "nome": "Bracelete Trevo Radiante Dourado",
       "preco": 24.9,
       "categoria": "pulseiras",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.05.32-1-.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.05.32-1-.jpeg",
+      "descricao": "Bracelete dourado com trevo em destaque e brilho elegante para o dia a dia."
     },
     {
       "disponivel": true,
@@ -648,7 +653,8 @@
       "nome": "Bracelete Trevo Madrepérola Dourado",
       "preco": 24.9,
       "categoria": "pulseiras",
-      "imagem": "/assets/uploads/screenshot_14.png"
+      "imagem": "/assets/uploads/screenshot_14.png",
+      "descricao": "Bracelete dourado com trevo em madrepérola, delicado e sofisticado."
     },
     {
       "disponivel": true,
@@ -658,7 +664,8 @@
       "nome": "Bracelete Aro Urbano Dourado",
       "preco": 24.9,
       "categoria": "pulseiras",
-      "imagem": "/assets/uploads/screenshot_1.png"
+      "imagem": "/assets/uploads/screenshot_1.png",
+      "descricao": "Bracelete dourado de aro moderno, versátil e cheio de presença."
     },
     {
       "destaque": false,
@@ -669,7 +676,8 @@
       "categoria": "conjuntos",
       "disponivel": true,
       "nome": "Conjunto Infinito Radiante Dourado",
-      "id": "Conjunto-Infinito-Radiante-Dourado"
+      "id": "Conjunto-Infinito-Radiante-Dourado",
+      "descricao": "Conjunto dourado com colar e brincos em formato de infinito, delicado e simbólico."
     },
     {
       "destaque": false,
@@ -680,7 +688,8 @@
       "categoria": "conjuntos",
       "disponivel": true,
       "nome": "Conjunto Árvore da Vida Dourado",
-      "id": "Conjunto-Árvore-da-Vida-Dourado"
+      "id": "Conjunto-Árvore-da-Vida-Dourado",
+      "descricao": "Conjunto dourado com colar e brincos árvore da vida, delicado e cheio de significado."
     },
     {
       "disponivel": true,
@@ -690,7 +699,8 @@
       "nome": "Conjunto Trio Esmeralda Dourado",
       "preco": 24.9,
       "categoria": "conjuntos",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.07.5931231.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.07.5931231.jpeg",
+      "descricao": "Conjunto dourado com pedras verdes em composição elegante e luminosa."
     },
     {
       "disponivel": true,
@@ -700,7 +710,8 @@
       "nome": "Pulseira Dupla Riviera Safira Dourada",
       "preco": 14.9,
       "categoria": "pulseiras",
-      "imagem": "/assets/uploads/0.png"
+      "imagem": "/assets/uploads/0.png",
+      "descricao": "Pulseira dourada dupla com brilho de riviera e detalhe azul sofisticado."
     },
     {
       "disponivel": true,
@@ -710,7 +721,8 @@
       "nome": "Colar Duplo Trevo Ônix Dourado",
       "preco": 19.9,
       "categoria": "colares",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.15.23.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.15.23.jpeg",
+      "descricao": "Colar dourado duplo com trevo ônix, elegante e versátil."
     },
     {
       "disponivel": true,
@@ -720,7 +732,8 @@
       "nome": "Colar Raízes da Vida Dourado",
       "preco": 19.9,
       "categoria": "colares",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.15.24.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.15.24.jpeg",
+      "descricao": "Colar dourado com pingente raízes da vida, delicado e cheio de significado."
     },
     {
       "disponivel": true,
@@ -730,7 +743,8 @@
       "nome": "Pulseira Esferas Elegance Dourada",
       "preco": 14.9,
       "categoria": "pulseiras",
-      "imagem": "/assets/uploads/01.png"
+      "imagem": "/assets/uploads/01.png",
+      "descricao": "Pulseira dourada com esferas polidas, moderna e delicada."
     },
     {
       "disponivel": true,
@@ -740,7 +754,8 @@
       "nome": "Pulseira Trevo Esmeralda Dourada",
       "preco": 14.9,
       "categoria": "pulseiras",
-      "imagem": "/assets/uploads/b1.png"
+      "imagem": "/assets/uploads/b1.png",
+      "descricao": "Pulseira dourada com trevo esmeralda, delicada e charmosa."
     },
     {
       "disponivel": true,
@@ -750,7 +765,8 @@
       "nome": "Pulseira Gota Esmeralda Dourada",
       "preco": 14.9,
       "categoria": "pulseiras",
-      "imagem": "/assets/uploads/c.png"
+      "imagem": "/assets/uploads/c.png",
+      "descricao": "Pulseira dourada com gota esmeralda, luminosa e elegante."
     },
     {
       "disponivel": true,
@@ -760,7 +776,8 @@
       "nome": "Pulseira Folhas de Luz Dourada",
       "preco": 14.9,
       "categoria": "pulseiras",
-      "imagem": "/assets/uploads/c1.png"
+      "imagem": "/assets/uploads/c1.png",
+      "descricao": "Pulseira dourada com folhas delicadas e brilho sutil."
     },
     {
       "disponivel": true,
@@ -770,7 +787,8 @@
       "nome": "Pulseira Corações e Pérolas Dourada",
       "preco": 14.9,
       "categoria": "pulseiras",
-      "imagem": "/assets/uploads/x.png"
+      "imagem": "/assets/uploads/x.png",
+      "descricao": "Pulseira dourada com corações e pérolas, romântica e delicada."
     },
     {
       "disponivel": true,
@@ -780,7 +798,8 @@
       "nome": "Pulseira Trio de Trevos Dourada",
       "preco": 14.9,
       "categoria": "pulseiras",
-      "imagem": "/assets/uploads/z.png"
+      "imagem": "/assets/uploads/z.png",
+      "descricao": "Pulseira dourada com trio de trevos, charmosa e cheia de significado."
     },
     {
       "disponivel": true,
@@ -790,7 +809,8 @@
       "nome": "Brinco Infinito Radiante Dourado",
       "preco": 19.9,
       "categoria": "brincos",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-1-.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-1-.jpeg",
+      "descricao": "Brinco dourado em formato de infinito, delicado e cheio de brilho."
     },
     {
       "disponivel": true,
@@ -800,7 +820,8 @@
       "nome": "Brinco Flor de Madrepérola Dourado",
       "preco": 19.9,
       "categoria": "brincos",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-2-.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-2-.jpeg",
+      "descricao": "Brinco dourado com flor de madrepérola, feminino e luminoso."
     },
     {
       "disponivel": true,
@@ -810,7 +831,8 @@
       "nome": "Brinco Folha Tropical Dourado",
       "preco": 19.9,
       "categoria": "brincos",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-3-.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-3-.jpeg",
+      "descricao": "Brinco dourado de folha tropical, leve e marcante."
     },
     {
       "disponivel": true,
@@ -820,7 +842,8 @@
       "nome": "Brinco Argola Clássica Dourada",
       "preco": 19.9,
       "categoria": "brincos",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-4-.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05-4-.jpeg",
+      "descricao": "Brinco dourado em argola clássica, versátil e atemporal."
     },
     {
       "disponivel": true,
@@ -830,7 +853,8 @@
       "nome": "Brinco Ondas de Luz Dourado",
       "preco": 19.89,
       "categoria": "brincos",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.05.jpeg",
+      "descricao": "Brinco dourado com linhas onduladas, moderno e elegante."
     },
     {
       "disponivel": true,
@@ -840,7 +864,8 @@
       "nome": "Brinco Flor Solar Dourado",
       "preco": 19.9,
       "categoria": "brincos",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.06-1-.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.06-1-.jpeg",
+      "descricao": "Brinco dourado em flor solar, delicado e radiante."
     },
     {
       "disponivel": true,
@@ -850,7 +875,8 @@
       "nome": "Brinco Flor de Cristal Dourado",
       "preco": 19.9,
       "categoria": "brincos",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.06.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.12.06.jpeg",
+      "descricao": "Brinco dourado floral com detalhe de cristal para um brilho delicado."
     },
     {
       "disponivel": true,
@@ -860,7 +886,8 @@
       "nome": "Brinco Flor Delicata Dourado",
       "preco": 19.9,
       "categoria": "brincos",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.13.19-1-.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.13.19-1-.jpeg",
+      "descricao": "Brinco dourado em flor delicada, leve e feminino."
     },
     {
       "disponivel": true,
@@ -870,7 +897,8 @@
       "nome": "Brinco Coração Alado Dourado",
       "preco": 19.9,
       "categoria": "brincos",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.13.19-2-.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.13.19-2-.jpeg",
+      "descricao": "Brinco dourado em coração alado, romântico e cheio de charme."
     },
     {
       "disponivel": true,
@@ -880,7 +908,8 @@
       "nome": "Brinco Esfera Minimalista Dourado",
       "preco": 19.9,
       "categoria": "brincos",
-      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.13.19.jpeg"
+      "imagem": "/assets/uploads/whatsapp-image-2026-07-15-at-18.13.19.jpeg",
+      "descricao": "Brinco dourado de esfera minimalista, discreto e elegante."
     },
     {
       "disponivel": true,
@@ -890,7 +919,8 @@
       "nome": "Choker Pérolas Clássicas Dourado",
       "preco": 19.9,
       "categoria": "colares",
-      "imagem": "/assets/uploads/ç.png"
+      "imagem": "/assets/uploads/ç.png",
+      "descricao": "Choker dourada com pérolas clássicas, delicada e atemporal."
     },
     {
       "disponivel": true,
@@ -900,7 +930,8 @@
       "nome": "Choker Riviera Delicata Dourado",
       "preco": 19.9,
       "categoria": "colares",
-      "imagem": "/assets/uploads/çç.png"
+      "imagem": "/assets/uploads/çç.png",
+      "descricao": "Choker dourada estilo riviera com brilho delicado e sofisticado."
     },
     {
       "disponivel": true,
@@ -910,17 +941,8 @@
       "nome": "Choker Folhagem Elegante Dourado",
       "preco": 19.9,
       "categoria": "colares",
-      "imagem": "/assets/uploads/l.png"
-    },
-    {
-      "disponivel": true,
-      "destaque": false,
-      "ordem": 80,
-      "id": "Colar-pedras",
-      "nome": "Colar De Pedras",
-      "preco": 19.9,
-      "categoria": "colares",
-      "imagem": "/assets/uploads/0.png"
+      "imagem": "/assets/uploads/l.png",
+      "descricao": "Choker dourada com folhagem elegante e acabamento delicado."
     },
     {
       "imagensAdicionais": [],
@@ -1138,6 +1160,34 @@
         18,
         20
       ]
+    },
+    {
+      "imagensAdicionais": [],
+      "destaque": false,
+      "descricao": "Conjunto dourado com colar e brincos em formato de leque, finalizados com ponto de luz delicado.",
+      "ordem": 111,
+      "preco": 24.9,
+      "precoPromocional": null,
+      "uso": "",
+      "imagem": "/assets/uploads/conjunto-leque-cristal-dourado.png",
+      "categoria": "conjuntos",
+      "disponivel": true,
+      "nome": "Conjunto Leque Cristal Dourado",
+      "id": "conjunto-leque-cristal-dourado"
+    },
+    {
+      "imagensAdicionais": [],
+      "destaque": false,
+      "descricao": "Conjunto dourado com colar e brincos em espiral solar, com acabamento vazado e brilho elegante.",
+      "ordem": 112,
+      "preco": 24.9,
+      "precoPromocional": null,
+      "uso": "",
+      "imagem": "/assets/uploads/conjunto-espiral-solar-dourado.png",
+      "categoria": "conjuntos",
+      "disponivel": true,
+      "nome": "Conjunto Espiral Solar Dourado",
+      "id": "conjunto-espiral-solar-dourado"
     }
   ]
 }
