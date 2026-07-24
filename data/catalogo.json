@@ -1024,6 +1024,16 @@
       "preco": 19.9,
       "categoria": "colares",
       "imagem": "/assets/uploads/0.png"
+    },
+    {
+      "disponivel": true,
+      "destaque": false,
+      "ordem": 81,
+      "id": "Colar-dourado",
+      "nome": "Colar Dourado",
+      "preco": 49.9,
+      "categoria": "colares",
+      "imagem": "/assets/uploads/anexo-do-usuário.png"
     }
   ]
 }
